@@ -14,7 +14,8 @@ public class escopo_inicializacao {
 			double discount = price * 0.1;
 		}
 		//System.out.println(discount);
-
+		
+		sc.close();
 	}
 
 }

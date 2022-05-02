@@ -13,7 +13,7 @@ public class Exercicio05_otimizado {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int cod, qtd = 0;
+		int cod = 0, qtd = 0;
 		double vlr_unit, valorPG = 0.0;
 		
 		for(int i = 0; i < 2; i++) {

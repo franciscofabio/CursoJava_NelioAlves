@@ -18,7 +18,7 @@ public class Exercicio03 {
 			double c2 = sc.nextDouble();
 			double c3 = sc.nextDouble();
 			
-			double mp = (c1*2.0 + c2*3.0 + c3*5.0)/10.0; 
+			double mp = (c1*30 + c2*35 + c3*35)/100.0; 
 			System.out.printf("%.1f%n",mp);
 		}
 		

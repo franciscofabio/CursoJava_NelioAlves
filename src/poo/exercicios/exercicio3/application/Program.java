@@ -14,6 +14,7 @@ public class Program {
 		
 		Student student = new Student();
 		
+		sc.hasNextLine();
 		student.name = sc.nextLine();
 		student.nota1 = sc.nextDouble();
 		student.nota2 = sc.nextDouble();

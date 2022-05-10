@@ -11,25 +11,23 @@ public class Program {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		Account account;
 		
 		System.out.print("Enter account number: ");
 		int number = sc.nextInt();
 		System.out.print("Enter account holder: ");
+		sc.nextLine();
 		String holder = sc.nextLine();
 		
-		Account account = new Account(number, holder);
-		
-		System.out.println();
-		System.out.print("Is there na initial deposit (y/n)? ");
+		System.out.print("Is there an initial deposit (y/n)? ");
 		char op = sc.next().charAt(0);
 		
-		double value = 0.0;
-		if (op != 'n') {
+		if (op == 'y') {
 			System.out.print("Enter initial deposit value: ");
-			value = sc.nextDouble();
-			account.deposit(value);
+			double initialDeposit = sc.nextDouble();
+			account = new Account(number, holder, initialDeposit);
 		} else {
-			account.deposit(value);
+			account = new Account(number, holder);
 		}
 		
 		System.out.println();
@@ -38,7 +36,7 @@ public class Program {
 
 		System.out.println();
 		System.out.print("Enter a deposit value: ");
-		value = sc.nextDouble();
+		double value = sc.nextDouble();
 		account.deposit(value);
 		
 		System.out.println("Updated account data:");

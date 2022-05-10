@@ -11,10 +11,10 @@ public class Account {
 		this.holder = holder;
 	}
 
-	public Account(int number, String holder, double balance) {
+	public Account(int number, String holder, double initialDeposit) {
 		this.number = number;
 		this.holder = holder;
-		this.balance = balance;
+		deposit(initialDeposit);
 	}
 
 	public int getNumber() {
@@ -42,7 +42,11 @@ public class Account {
 	}
 	
 	public String toString() {
-		return "Account "+this.getNumber()+", Holder: "
-				+getHolder()+", Balance: $ "+String.format("%.2f", getBalance());
+		return "Account "
+				+getNumber()
+				+", Holder: "
+				+getHolder()
+				+", Balance: $ "
+				+String.format("%.2f", getBalance());
 	}
 }

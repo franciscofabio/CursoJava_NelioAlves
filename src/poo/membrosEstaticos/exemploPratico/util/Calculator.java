@@ -1,4 +1,4 @@
-package poo.membrosEstaticos.util;
+package poo.membrosEstaticos.exemploPratico.util;
 
 public class Calculator {
 	

@@ -1,9 +1,9 @@
-package poo.membrosEstaticos.application;
+package poo.membrosEstaticos.exemploPratico.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import poo.membrosEstaticos.util.Calculator;
+import poo.membrosEstaticos.exemploPratico.util.Calculator;
 
 public class Program {
 

@@ -31,9 +31,9 @@ public class Rent {
 	public int getRoom() {
 		return room;
 	}
-
-	public void setRoom(int room) {
-		this.room = room;
+	
+	public String toString() {
+		return getRoom()+": "+getName()+", "+getEmail();
 	}
 	
 }

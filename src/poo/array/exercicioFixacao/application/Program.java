@@ -36,8 +36,7 @@ public class Program {
 		
 		for (int i = 0; i < rents.length; i++) {
 			if (rents[i] != null) {
-				System.out.printf("%d: %s, %s%n",
-						rents[i].getRoom(), rents[i].getName(), rents[i].getEmail());
+				System.out.println(rents[i]);
 			}	
 		}
 		
